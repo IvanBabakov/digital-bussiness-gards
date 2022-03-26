@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  display: flex;
+  justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color:#23252C;
+  /* padding: 44px 117px;
+  margin-right: 49px; */
+}
+
+.main--content {
+  max-width: 317px;
+  background-color:#1A1B21;
+  color: #FFFFFF;
+  padding: 21px 35px;
+}
+
+.main--content > h3, .main--content > h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.main--content > h2 {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.main--content > h3 {
+  font-weight: 400;
+  font-size: 12.8px;
+  color: #F3BF99;
+}
+
+.main--buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 33px;
+  padding-top: 15px;
+}
+
+.main--buttons button {
+  width: 115px;
+  height: 34px;
+  border: none;
+  border-radius: 6px;
+}
+
+.discription h4 {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0;
+}
+
+.discription p {
+  font-weight: 400;
+  font-size: 10.24px;
+}
+
+.photo {
+  width: 317px;
+  height: 317px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 10px 10px 0px 0px;
+}
+
+footer {
+  background-color: #161619;
+  width: 317px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 0px 0px 10px 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.icon {
+  margin-right: 24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon--twit {
+  width: 25px;
+  height: 25px;
+  background-image: url(./Icons/Icontwit.png);
+}
+
+.icon--facebook {
+  width: 25px;
+  height: 25px;
+  background-image: url(./Icons/Facebook\ Icon.png);
+}
+
+.icon--instagram {
+  width: 25px;
+  height: 25px;
+  background-image: url(./Icons/Instagram\ Icon.png);
+}
+
+.icon--github {
+  width: 25px;
+  height: 25px;
+  background-image: url(./Icons/GitHub\ Icon.png);
 }
